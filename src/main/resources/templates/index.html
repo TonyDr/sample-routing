@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Sample Remote - Countries</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="webjars/bootstrap/3.3.7/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="webjars/jquery/1.11.1/jquery.min.js"></script>
+    <script type="text/javascript" th:src="@{/js/jquery.twbsPagination.min.js}" ></script>
+    <script type="text/javascript" th:src="@{/js/country.js}"></script>
+</head>
+<body>
+<div class="container">
+    <div id="country_list">
+        <h2>Countries and their currencies</h2>
+        <table id="country_table" class='table table-bordered'>
+            <thead>
+            <tr>
+                <th>Country</th>
+                <th>Currency</th>
+            </tr>
+            </thead>
+            <tbody>
+
+            </tbody>
+        </table>
+        <div id="pagingButtons">
+
+        </div>
+    </div>
+
+    <footer>
+        <form action="#" th:action="@{/logout}" method="post">
+            <input class="btn" type="submit" value="Logout" />
+        </form>
+
+        <script type="text/javascript"
+                src="webjars/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    </footer>
+</div>
+</body>
+</html>
