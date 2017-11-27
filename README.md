@@ -8,7 +8,7 @@ On startup app retrieve country list from remote data repository
     /api/countries?page=? - return page of country. page size is 5;
    
    - One Web page with list of countries available by path "/" or "/index"
-![Image of page](https://github.com/TonyDr/sample-routing/content/sample-routing-countries.png)  
+![Image of page](https://github.com/TonyDr/sample-routing/blob/master/content/sample-routing-countries.png)  
 ***
     
 #### Implementation.     
