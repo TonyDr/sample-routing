@@ -2,19 +2,20 @@ package ru.tony.sample.routing.repository;
 
 import org.junit.BeforeClass;
 import org.junit.Test;
+import ru.tony.sample.routing.rest.SSLRestTemplate;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
-public class ExternalCountryRepositoryTest {
+public class RemoteCountryRepositoryTest {
 
 
     private static final int PAGE_SIZE = 3;
-    private static ExternalCountryRepository sut;
+    private static RemoteCountryRepository sut;
 
     @BeforeClass
     public static void beforeClass() {
-        sut = new ExternalCountryRepository();
+        sut = new RemoteCountryRepository(new SSLRestTemplate());
         sut.init();
     }
 
